@@ -6,5 +6,9 @@ async fn fetch(
     _env: Env,
     _ctx: Context,
 ) -> Result<Response> {
-    Response::ok("Hello World!")
+    let router = Router::new();
+
+    router.get_async("/search", |_req, _ctx| async move {
+        Response::ok("Hello world!")
+    }).run(_req, _env).await
 }
