@@ -1,0 +1,12 @@
+[package]
+name = "food-hygiene-ratings-uk"
+version = "0.1.0"
+edition = "2021"
+authors = ["Daniel Maynard <danielmaynard7@outlook.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+worker = { version = "0.7" }
+worker-macros = { version = "0.7" }
